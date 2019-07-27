@@ -4,6 +4,7 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
+    "prep": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

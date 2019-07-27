@@ -30,7 +30,7 @@ export class UploadPage {
     submitBtn = element(by.id('file-submit'));
     uploadCompletedText = element(by.css('#content > div > h3'));
     uploadedFileText = element(by.id('uploaded-files'));
-    dragAndDrop = element(by.id('drag-drop-upload'));
+    dragAndDrop = element(by.css('#drag-drop-upload'));
 
     openBrowser() {
         browser.get('https://the-internet.herokuapp.com/upload');

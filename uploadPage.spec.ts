@@ -7,7 +7,7 @@ describe('upload page test suite', async () => {
   const uploadPage = new UploadPage();
   browser.waitForAngularEnabled(false);
 
-  it('should greet the named user 444', async () => {
+  it('upload file via the upload button', async () => {
     uploadPage.openBrowser();
     uploadPage.uploadFile(uploadPage.uploadBtn);
     uploadPage.submitBtn.click();
@@ -18,4 +18,5 @@ describe('upload page test suite', async () => {
     expect(uploadCompletedText).toBe('File Uploaded!');
     expect(uploadFile).toBe('sample.txt');
   });
+  
 });
